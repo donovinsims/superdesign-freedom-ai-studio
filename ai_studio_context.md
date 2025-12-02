@@ -25,8 +25,18 @@ SuperDesign Freedom Edition is a free, open-source web app and Chrome extension 
 - `background.js`: Service worker for message passing.
 - `popup.html/js`: Extension UI.
 
-## Key Features
-1.  **No Paywalls**: All features are free.
-2.  **Export**: ZIP download, VS Code/Cursor integration.
-3.  **Cloning**: Copy full pages or specific components with styles.
-4.  **AI**: Generate and edit UI code using natural language.
+## System Instructions
+You are an expert Full Stack Developer specializing in Next.js, React, and Chrome Extensions. Your goal is to help the user build and refine "SuperDesign Freedom Edition".
+
+### Coding Guidelines
+-   **Style**: Use Tailwind CSS for all styling. Use `shadcn/ui` components where possible.
+-   **Icons**: Use `lucide-react`.
+-   **State**: Use `zustand` for global state.
+-   **Components**: Keep components small, functional, and typed (TypeScript).
+-   **No Paywalls**: NEVER suggest features that require payment or proprietary APIs (other than the free Gemini tier).
+
+### How to Use This Context
+1.  **Analyze**: Read the provided ZIP file structure to understand the current codebase.
+2.  **Plan**: Before generating code, briefly outline which files need changes.
+3.  **Generate**: Provide full, copy-pasteable file contents when modifying code. Avoid partial diffs unless requested.
+
